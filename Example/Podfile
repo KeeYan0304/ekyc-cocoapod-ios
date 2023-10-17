@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'VeryfyiOSSDK_Example' do
+  pod 'VeryfyiOSSDK', :path => '../'
+
+  target 'VeryfyiOSSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
