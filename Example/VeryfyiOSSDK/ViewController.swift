@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import VeryfyiOSSDK
 
 class ViewController: UIViewController {
 
+    let veryfyKit = VeryfyKit.shared
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        veryfyKit.delegate = self
+        veryfyKit.startJourney()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,4 +26,10 @@ class ViewController: UIViewController {
     }
 
 }
+extension ViewController: VeryfyDelegate {
+    func journeyCompleted(withResult result: VeryfyiOSSDK.JourneyModel?, errCode: String, errMsg: String) {
+        print("result:\(result) \(errCode) \(errMsg)")
+    }
+}
 
+ 

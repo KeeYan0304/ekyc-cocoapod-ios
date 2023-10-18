@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'VeryfyiOSSDK'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of VeryfyiOSSDK.'
+  s.summary          = 'This is a meaningful summary pod of VeryfyiOSSDK.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,20 +18,20 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+TODO: The veryfy iOS SDK is a software development tool which connect users to EKYC services and perform verification including identity card and facial recognition to validate a person identity
                        DESC
 
-  s.homepage         = 'https://github.com/Kee Chun Yan/VeryfyiOSSDK'
+  s.homepage         = 'https://github.com/KeeYan0304/ekyc-cocoapod-ios'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Kee Chun Yan' => 'chunyan.kee@veryfyglobal.tech' }
-  s.source           = { :git => 'https://github.com/Kee Chun Yan/VeryfyiOSSDK.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/KeeYan0304/ekyc-cocoapod-ios.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '13.0'
 
   s.source_files = 'VeryfyiOSSDK/Classes/**/*'
-  
+  s.swift_version = '5.0'
   # s.resource_bundles = {
   #   'VeryfyiOSSDK' => ['VeryfyiOSSDK/Assets/*.png']
   # }
