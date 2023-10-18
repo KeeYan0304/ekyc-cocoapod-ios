@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="EKYCViewController" id="Y6W-OH-hqX" customClass="EKYCViewController" customModule="VeryfyClientSDK" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zie-vh-gig">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iIZ-83-sEH">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="759"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="iIZ-83-sEH" firstAttribute="bottom" secondItem="D3u-GB-hrW" secondAttribute="bottom" id="Y0Q-ac-72B"/>
+                                    <constraint firstItem="D3u-GB-hrW" firstAttribute="leading" secondItem="iIZ-83-sEH" secondAttribute="leading" id="aJv-Js-T91"/>
+                                    <constraint firstItem="iIZ-83-sEH" firstAttribute="width" secondItem="OY3-26-xsp" secondAttribute="width" id="hta-AC-gaL"/>
+                                    <constraint firstItem="iIZ-83-sEH" firstAttribute="height" secondItem="OY3-26-xsp" secondAttribute="height" priority="750" id="iSP-nF-oa4"/>
+                                    <constraint firstItem="iIZ-83-sEH" firstAttribute="trailing" secondItem="D3u-GB-hrW" secondAttribute="trailing" id="wNS-g9-mcC"/>
+                                    <constraint firstItem="D3u-GB-hrW" firstAttribute="top" secondItem="iIZ-83-sEH" secondAttribute="top" id="yfY-tb-3GH"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="D3u-GB-hrW"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="OY3-26-xsp"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="zie-vh-gig" secondAttribute="bottom" id="6Vc-vQ-lVM"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="zie-vh-gig" secondAttribute="trailing" id="Pr5-RF-oCX"/>
+                            <constraint firstItem="zie-vh-gig" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Qyc-te-qSt"/>
+                            <constraint firstItem="zie-vh-gig" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Uy9-JN-VWq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="iIZ-83-sEH" id="bsu-h0-cod"/>
+                        <outlet property="scrollView" destination="zie-vh-gig" id="wIx-Rd-8yh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

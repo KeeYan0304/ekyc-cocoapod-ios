@@ -9,12 +9,57 @@
 /* Begin PBXBuildFile section */
 		13E98B0436062E7C7147D74D /* Pods_VeryfyiOSSDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 008C937C8EC27A02D2D5FEE2 /* Pods_VeryfyiOSSDK_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		89657A66D74C3760D2936481 /* Pods_VeryfyiOSSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29BE7F90E8BAA7B7F156D34 /* Pods_VeryfyiOSSDK_Example.framework */; };
+		E17114422ADFC729002C0BF2 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17114412ADFC729002C0BF2 /* MainMenuViewController.swift */; };
+		E17114442ADFC777002C0BF2 /* OCRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17114432ADFC777002C0BF2 /* OCRViewController.swift */; };
+		E171145E2ADFC7ED002C0BF2 /* IDResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17114462ADFC7ED002C0BF2 /* IDResultModel.swift */; };
+		E171145F2ADFC7ED002C0BF2 /* FRResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17114472ADFC7ED002C0BF2 /* FRResultModel.swift */; };
+		E17114602ADFC7ED002C0BF2 /* IDResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E17114492ADFC7ED002C0BF2 /* IDResultCell.xib */; };
+		E17114612ADFC7ED002C0BF2 /* LabelResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E171144A2ADFC7ED002C0BF2 /* LabelResultCell.swift */; };
+		E17114622ADFC7ED002C0BF2 /* LabelResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E171144B2ADFC7ED002C0BF2 /* LabelResultCell.xib */; };
+		E17114632ADFC7ED002C0BF2 /* IDResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E171144C2ADFC7ED002C0BF2 /* IDResultCell.swift */; };
+		E17114642ADFC7ED002C0BF2 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E171144E2ADFC7ED002C0BF2 /* UIView.swift */; };
+		E17114652ADFC7ED002C0BF2 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E171144F2ADFC7ED002C0BF2 /* UIColor.swift */; };
+		E17114662ADFC7ED002C0BF2 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17114502ADFC7ED002C0BF2 /* UIImage.swift */; };
+		E17114672ADFC7ED002C0BF2 /* SelfieResultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E17114522ADFC7ED002C0BF2 /* SelfieResultView.xib */; };
+		E17114682ADFC7ED002C0BF2 /* CameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E17114532ADFC7ED002C0BF2 /* CameraView.xib */; };
+		E171146A2ADFC7ED002C0BF2 /* IDResultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E17114552ADFC7ED002C0BF2 /* IDResultView.xib */; };
+		E171146B2ADFC7ED002C0BF2 /* SelfieResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17114562ADFC7ED002C0BF2 /* SelfieResultView.swift */; };
+		E171146C2ADFC7ED002C0BF2 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17114572ADFC7ED002C0BF2 /* CameraView.swift */; };
+		E171146D2ADFC7ED002C0BF2 /* EKYCLoaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E17114582ADFC7ED002C0BF2 /* EKYCLoaderView.xib */; };
+		E171146E2ADFC7ED002C0BF2 /* EKYCLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17114592ADFC7ED002C0BF2 /* EKYCLoaderView.swift */; };
+		E17114702ADFC7ED002C0BF2 /* CaptureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E171145B2ADFC7ED002C0BF2 /* CaptureView.xib */; };
+		E17114712ADFC7ED002C0BF2 /* CaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E171145C2ADFC7ED002C0BF2 /* CaptureView.swift */; };
+		E17114722ADFC7ED002C0BF2 /* IDResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E171145D2ADFC7ED002C0BF2 /* IDResultView.swift */; };
+		E17114742ADFC802002C0BF2 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17114732ADFC802002C0BF2 /* AppColor.swift */; };
+		E17114932ADFCFA8002C0BF2 /* UIImage+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17114782ADFCFA8002C0BF2 /* UIImage+Helper.swift */; };
+		E17114942ADFCFA8002C0BF2 /* UIView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17114792ADFCFA8002C0BF2 /* UIView+Helper.swift */; };
+		E17114952ADFCFA8002C0BF2 /* UIImage+Cropping.swift in Sources */ = {isa = PBXBuildFile; fileRef = E171147A2ADFCFA8002C0BF2 /* UIImage+Cropping.swift */; };
+		E17114962ADFCFA8002C0BF2 /* HelperExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E171147B2ADFCFA8002C0BF2 /* HelperExtensions.swift */; };
+		E17114972ADFCFA8002C0BF2 /* Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E171147D2ADFCFA8002C0BF2 /* Toolbar.swift */; };
+		E17114982ADFCFA8002C0BF2 /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E171147E2ADFCFA8002C0BF2 /* TopBar.swift */; };
+		E17114992ADFCFA8002C0BF2 /* AngleRuler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E171147F2ADFCFA8002C0BF2 /* AngleRuler.swift */; };
+		E171149A2ADFCFA8002C0BF2 /* AspectRatioPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17114802ADFCFA8002C0BF2 /* AspectRatioPicker.swift */; };
+		E171149B2ADFCFA8002C0BF2 /* CropBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17114822ADFCFA8002C0BF2 /* CropBox.swift */; };
+		E171149C2ADFCFA8002C0BF2 /* Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17114832ADFCFA8002C0BF2 /* Overlay.swift */; };
+		E171149D2ADFCFA8002C0BF2 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17114842ADFCFA8002C0BF2 /* Grid.swift */; };
+		E171149E2ADFCFA8002C0BF2 /* CropBoxEdgeDraggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17114872ADFCFA8002C0BF2 /* CropBoxEdgeDraggable.swift */; };
+		E171149F2ADFCFA8002C0BF2 /* StateRestorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17114882ADFCFA8002C0BF2 /* StateRestorable.swift */; };
+		E17114A02ADFCFA8002C0BF2 /* Stasisable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17114892ADFCFA8002C0BF2 /* Stasisable.swift */; };
+		E17114A12ADFCFA8002C0BF2 /* Flipable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E171148A2ADFCFA8002C0BF2 /* Flipable.swift */; };
+		E17114A22ADFCFA8002C0BF2 /* Rotatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E171148B2ADFCFA8002C0BF2 /* Rotatable.swift */; };
+		E17114A32ADFCFA8002C0BF2 /* AngleAssist.swift in Sources */ = {isa = PBXBuildFile; fileRef = E171148C2ADFCFA8002C0BF2 /* AngleAssist.swift */; };
+		E17114A42ADFCFA8002C0BF2 /* AspectRatioSettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E171148D2ADFCFA8002C0BF2 /* AspectRatioSettable.swift */; };
+		E17114A52ADFCFA8002C0BF2 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = E171148E2ADFCFA8002C0BF2 /* Config.swift */; };
+		E17114A62ADFCFA8002C0BF2 /* ScrollViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E171148F2ADFCFA8002C0BF2 /* ScrollViewContainer.swift */; };
+		E17114A72ADFCFA8002C0BF2 /* CropperState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17114902ADFCFA8002C0BF2 /* CropperState.swift */; };
+		E17114A82ADFCFA8002C0BF2 /* CropperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17114912ADFCFA8002C0BF2 /* CropperViewController.swift */; };
+		E17114A92ADFCFA8002C0BF2 /* AspectRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17114922ADFCFA8002C0BF2 /* AspectRatio.swift */; };
+		E17114AB2ADFD0C6002C0BF2 /* Veryfy logo gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = E17114AA2ADFD0C6002C0BF2 /* Veryfy logo gif.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +80,6 @@
 		607FACD01AFB9204008FA782 /* VeryfyiOSSDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeryfyiOSSDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -46,6 +90,52 @@
 		9F63FF49370DE87A07EEAD95 /* Pods-VeryfyiOSSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeryfyiOSSDK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-VeryfyiOSSDK_Tests/Pods-VeryfyiOSSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B29BE7F90E8BAA7B7F156D34 /* Pods_VeryfyiOSSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VeryfyiOSSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC0DFD0A454C12AE99153EE1 /* Pods-VeryfyiOSSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeryfyiOSSDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-VeryfyiOSSDK_Example/Pods-VeryfyiOSSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		E17114412ADFC729002C0BF2 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		E17114432ADFC777002C0BF2 /* OCRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCRViewController.swift; sourceTree = "<group>"; };
+		E17114462ADFC7ED002C0BF2 /* IDResultModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDResultModel.swift; sourceTree = "<group>"; };
+		E17114472ADFC7ED002C0BF2 /* FRResultModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRResultModel.swift; sourceTree = "<group>"; };
+		E17114492ADFC7ED002C0BF2 /* IDResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IDResultCell.xib; sourceTree = "<group>"; };
+		E171144A2ADFC7ED002C0BF2 /* LabelResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelResultCell.swift; sourceTree = "<group>"; };
+		E171144B2ADFC7ED002C0BF2 /* LabelResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LabelResultCell.xib; sourceTree = "<group>"; };
+		E171144C2ADFC7ED002C0BF2 /* IDResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDResultCell.swift; sourceTree = "<group>"; };
+		E171144E2ADFC7ED002C0BF2 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		E171144F2ADFC7ED002C0BF2 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		E17114502ADFC7ED002C0BF2 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		E17114522ADFC7ED002C0BF2 /* SelfieResultView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelfieResultView.xib; sourceTree = "<group>"; };
+		E17114532ADFC7ED002C0BF2 /* CameraView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraView.xib; sourceTree = "<group>"; };
+		E17114552ADFC7ED002C0BF2 /* IDResultView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IDResultView.xib; sourceTree = "<group>"; };
+		E17114562ADFC7ED002C0BF2 /* SelfieResultView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfieResultView.swift; sourceTree = "<group>"; };
+		E17114572ADFC7ED002C0BF2 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		E17114582ADFC7ED002C0BF2 /* EKYCLoaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EKYCLoaderView.xib; sourceTree = "<group>"; };
+		E17114592ADFC7ED002C0BF2 /* EKYCLoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKYCLoaderView.swift; sourceTree = "<group>"; };
+		E171145B2ADFC7ED002C0BF2 /* CaptureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CaptureView.xib; sourceTree = "<group>"; };
+		E171145C2ADFC7ED002C0BF2 /* CaptureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureView.swift; sourceTree = "<group>"; };
+		E171145D2ADFC7ED002C0BF2 /* IDResultView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDResultView.swift; sourceTree = "<group>"; };
+		E17114732ADFC802002C0BF2 /* AppColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		E17114782ADFCFA8002C0BF2 /* UIImage+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Helper.swift"; sourceTree = "<group>"; };
+		E17114792ADFCFA8002C0BF2 /* UIView+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Helper.swift"; sourceTree = "<group>"; };
+		E171147A2ADFCFA8002C0BF2 /* UIImage+Cropping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Cropping.swift"; sourceTree = "<group>"; };
+		E171147B2ADFCFA8002C0BF2 /* HelperExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperExtensions.swift; sourceTree = "<group>"; };
+		E171147D2ADFCFA8002C0BF2 /* Toolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toolbar.swift; sourceTree = "<group>"; };
+		E171147E2ADFCFA8002C0BF2 /* TopBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
+		E171147F2ADFCFA8002C0BF2 /* AngleRuler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AngleRuler.swift; sourceTree = "<group>"; };
+		E17114802ADFCFA8002C0BF2 /* AspectRatioPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AspectRatioPicker.swift; sourceTree = "<group>"; };
+		E17114822ADFCFA8002C0BF2 /* CropBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropBox.swift; sourceTree = "<group>"; };
+		E17114832ADFCFA8002C0BF2 /* Overlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Overlay.swift; sourceTree = "<group>"; };
+		E17114842ADFCFA8002C0BF2 /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		E17114872ADFCFA8002C0BF2 /* CropBoxEdgeDraggable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropBoxEdgeDraggable.swift; sourceTree = "<group>"; };
+		E17114882ADFCFA8002C0BF2 /* StateRestorable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateRestorable.swift; sourceTree = "<group>"; };
+		E17114892ADFCFA8002C0BF2 /* Stasisable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stasisable.swift; sourceTree = "<group>"; };
+		E171148A2ADFCFA8002C0BF2 /* Flipable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flipable.swift; sourceTree = "<group>"; };
+		E171148B2ADFCFA8002C0BF2 /* Rotatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rotatable.swift; sourceTree = "<group>"; };
+		E171148C2ADFCFA8002C0BF2 /* AngleAssist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AngleAssist.swift; sourceTree = "<group>"; };
+		E171148D2ADFCFA8002C0BF2 /* AspectRatioSettable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AspectRatioSettable.swift; sourceTree = "<group>"; };
+		E171148E2ADFCFA8002C0BF2 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		E171148F2ADFCFA8002C0BF2 /* ScrollViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewContainer.swift; sourceTree = "<group>"; };
+		E17114902ADFCFA8002C0BF2 /* CropperState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropperState.swift; sourceTree = "<group>"; };
+		E17114912ADFCFA8002C0BF2 /* CropperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropperViewController.swift; sourceTree = "<group>"; };
+		E17114922ADFCFA8002C0BF2 /* AspectRatio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AspectRatio.swift; sourceTree = "<group>"; };
+		E17114AA2ADFD0C6002C0BF2 /* Veryfy logo gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Veryfy logo gif.gif"; sourceTree = "<group>"; };
 		E9030DB97F5FBF4C1E6B658B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,11 +203,19 @@
 		607FACD21AFB9204008FA782 /* Example for VeryfyiOSSDK */ = {
 			isa = PBXGroup;
 			children = (
+				E17114AA2ADFD0C6002C0BF2 /* Veryfy logo gif.gif */,
+				E17114762ADFCF90002C0BF2 /* CropTool */,
+				E17114482ADFC7ED002C0BF2 /* Cells */,
+				E171144D2ADFC7ED002C0BF2 /* Extensions */,
+				E17114452ADFC7ED002C0BF2 /* Models */,
+				E17114512ADFC7ED002C0BF2 /* Views */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				E17114412ADFC729002C0BF2 /* MainMenuViewController.swift */,
+				E17114432ADFC777002C0BF2 /* OCRViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				E17114732ADFC802002C0BF2 /* AppColor.swift */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for VeryfyiOSSDK";
@@ -157,6 +255,127 @@
 				3C35DDD6D6EBE1D4B98488B8 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		E17114452ADFC7ED002C0BF2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E17114462ADFC7ED002C0BF2 /* IDResultModel.swift */,
+				E17114472ADFC7ED002C0BF2 /* FRResultModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E17114482ADFC7ED002C0BF2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E17114492ADFC7ED002C0BF2 /* IDResultCell.xib */,
+				E171144A2ADFC7ED002C0BF2 /* LabelResultCell.swift */,
+				E171144B2ADFC7ED002C0BF2 /* LabelResultCell.xib */,
+				E171144C2ADFC7ED002C0BF2 /* IDResultCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		E171144D2ADFC7ED002C0BF2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E171144E2ADFC7ED002C0BF2 /* UIView.swift */,
+				E171144F2ADFC7ED002C0BF2 /* UIColor.swift */,
+				E17114502ADFC7ED002C0BF2 /* UIImage.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E17114512ADFC7ED002C0BF2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E17114522ADFC7ED002C0BF2 /* SelfieResultView.xib */,
+				E17114532ADFC7ED002C0BF2 /* CameraView.xib */,
+				E17114552ADFC7ED002C0BF2 /* IDResultView.xib */,
+				E17114562ADFC7ED002C0BF2 /* SelfieResultView.swift */,
+				E17114572ADFC7ED002C0BF2 /* CameraView.swift */,
+				E17114582ADFC7ED002C0BF2 /* EKYCLoaderView.xib */,
+				E17114592ADFC7ED002C0BF2 /* EKYCLoaderView.swift */,
+				E171145B2ADFC7ED002C0BF2 /* CaptureView.xib */,
+				E171145C2ADFC7ED002C0BF2 /* CaptureView.swift */,
+				E171145D2ADFC7ED002C0BF2 /* IDResultView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E17114762ADFCF90002C0BF2 /* CropTool */ = {
+			isa = PBXGroup;
+			children = (
+				E17114852ADFCFA8002C0BF2 /* Core */,
+				E171147C2ADFCFA8002C0BF2 /* CustomUI */,
+				E17114772ADFCFA8002C0BF2 /* HelperExtensions */,
+				E17114812ADFCFA8002C0BF2 /* Overlay */,
+			);
+			path = CropTool;
+			sourceTree = "<group>";
+		};
+		E17114772ADFCFA8002C0BF2 /* HelperExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				E17114782ADFCFA8002C0BF2 /* UIImage+Helper.swift */,
+				E17114792ADFCFA8002C0BF2 /* UIView+Helper.swift */,
+				E171147A2ADFCFA8002C0BF2 /* UIImage+Cropping.swift */,
+				E171147B2ADFCFA8002C0BF2 /* HelperExtensions.swift */,
+			);
+			name = HelperExtensions;
+			path = ../../../Classes/CropTool/HelperExtensions;
+			sourceTree = "<group>";
+		};
+		E171147C2ADFCFA8002C0BF2 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				E171147D2ADFCFA8002C0BF2 /* Toolbar.swift */,
+				E171147E2ADFCFA8002C0BF2 /* TopBar.swift */,
+				E171147F2ADFCFA8002C0BF2 /* AngleRuler.swift */,
+				E17114802ADFCFA8002C0BF2 /* AspectRatioPicker.swift */,
+			);
+			name = CustomUI;
+			path = ../../../Classes/CropTool/CustomUI;
+			sourceTree = "<group>";
+		};
+		E17114812ADFCFA8002C0BF2 /* Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				E17114822ADFCFA8002C0BF2 /* CropBox.swift */,
+				E17114832ADFCFA8002C0BF2 /* Overlay.swift */,
+				E17114842ADFCFA8002C0BF2 /* Grid.swift */,
+			);
+			name = Overlay;
+			path = ../../../Classes/CropTool/Overlay;
+			sourceTree = "<group>";
+		};
+		E17114852ADFCFA8002C0BF2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E17114862ADFCFA8002C0BF2 /* CropperProtocols */,
+				E171148E2ADFCFA8002C0BF2 /* Config.swift */,
+				E171148F2ADFCFA8002C0BF2 /* ScrollViewContainer.swift */,
+				E17114902ADFCFA8002C0BF2 /* CropperState.swift */,
+				E17114912ADFCFA8002C0BF2 /* CropperViewController.swift */,
+				E17114922ADFCFA8002C0BF2 /* AspectRatio.swift */,
+			);
+			name = Core;
+			path = ../../../Classes/CropTool/Core;
+			sourceTree = "<group>";
+		};
+		E17114862ADFCFA8002C0BF2 /* CropperProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				E17114872ADFCFA8002C0BF2 /* CropBoxEdgeDraggable.swift */,
+				E17114882ADFCFA8002C0BF2 /* StateRestorable.swift */,
+				E17114892ADFCFA8002C0BF2 /* Stasisable.swift */,
+				E171148A2ADFCFA8002C0BF2 /* Flipable.swift */,
+				E171148B2ADFCFA8002C0BF2 /* Rotatable.swift */,
+				E171148C2ADFCFA8002C0BF2 /* AngleAssist.swift */,
+				E171148D2ADFCFA8002C0BF2 /* AspectRatioSettable.swift */,
+			);
+			path = CropperProtocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,8 +468,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				E17114672ADFC7ED002C0BF2 /* SelfieResultView.xib in Resources */,
+				E17114602ADFC7ED002C0BF2 /* IDResultCell.xib in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				E17114682ADFC7ED002C0BF2 /* CameraView.xib in Resources */,
+				E17114622ADFC7ED002C0BF2 /* LabelResultCell.xib in Resources */,
+				E17114702ADFC7ED002C0BF2 /* CaptureView.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				E17114AB2ADFD0C6002C0BF2 /* Veryfy logo gif.gif in Resources */,
+				E171146A2ADFC7ED002C0BF2 /* IDResultView.xib in Resources */,
+				E171146D2ADFC7ED002C0BF2 /* EKYCLoaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,8 +560,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				E17114A82ADFCFA8002C0BF2 /* CropperViewController.swift in Sources */,
+				E17114972ADFCFA8002C0BF2 /* Toolbar.swift in Sources */,
+				E17114642ADFC7ED002C0BF2 /* UIView.swift in Sources */,
+				E17114992ADFCFA8002C0BF2 /* AngleRuler.swift in Sources */,
+				E17114662ADFC7ED002C0BF2 /* UIImage.swift in Sources */,
+				E171146B2ADFC7ED002C0BF2 /* SelfieResultView.swift in Sources */,
+				E17114A72ADFCFA8002C0BF2 /* CropperState.swift in Sources */,
+				E17114A42ADFCFA8002C0BF2 /* AspectRatioSettable.swift in Sources */,
+				E171149B2ADFCFA8002C0BF2 /* CropBox.swift in Sources */,
+				E171146C2ADFC7ED002C0BF2 /* CameraView.swift in Sources */,
+				E17114942ADFCFA8002C0BF2 /* UIView+Helper.swift in Sources */,
+				E17114A22ADFCFA8002C0BF2 /* Rotatable.swift in Sources */,
+				E17114722ADFC7ED002C0BF2 /* IDResultView.swift in Sources */,
+				E17114A12ADFCFA8002C0BF2 /* Flipable.swift in Sources */,
+				E17114A92ADFCFA8002C0BF2 /* AspectRatio.swift in Sources */,
+				E17114632ADFC7ED002C0BF2 /* IDResultCell.swift in Sources */,
+				E17114952ADFCFA8002C0BF2 /* UIImage+Cropping.swift in Sources */,
+				E17114742ADFC802002C0BF2 /* AppColor.swift in Sources */,
+				E171149E2ADFCFA8002C0BF2 /* CropBoxEdgeDraggable.swift in Sources */,
+				E17114A32ADFCFA8002C0BF2 /* AngleAssist.swift in Sources */,
+				E17114A62ADFCFA8002C0BF2 /* ScrollViewContainer.swift in Sources */,
+				E17114A52ADFCFA8002C0BF2 /* Config.swift in Sources */,
+				E17114422ADFC729002C0BF2 /* MainMenuViewController.swift in Sources */,
+				E171149F2ADFCFA8002C0BF2 /* StateRestorable.swift in Sources */,
+				E171146E2ADFC7ED002C0BF2 /* EKYCLoaderView.swift in Sources */,
+				E17114612ADFC7ED002C0BF2 /* LabelResultCell.swift in Sources */,
+				E17114652ADFC7ED002C0BF2 /* UIColor.swift in Sources */,
+				E171149A2ADFCFA8002C0BF2 /* AspectRatioPicker.swift in Sources */,
+				E17114932ADFCFA8002C0BF2 /* UIImage+Helper.swift in Sources */,
+				E17114982ADFCFA8002C0BF2 /* TopBar.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				E17114442ADFC777002C0BF2 /* OCRViewController.swift in Sources */,
+				E171145F2ADFC7ED002C0BF2 /* FRResultModel.swift in Sources */,
+				E17114962ADFCFA8002C0BF2 /* HelperExtensions.swift in Sources */,
+				E171145E2ADFC7ED002C0BF2 /* IDResultModel.swift in Sources */,
+				E171149C2ADFCFA8002C0BF2 /* Overlay.swift in Sources */,
+				E17114712ADFC7ED002C0BF2 /* CaptureView.swift in Sources */,
+				E17114A02ADFCFA8002C0BF2 /* Stasisable.swift in Sources */,
+				E171149D2ADFCFA8002C0BF2 /* Grid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

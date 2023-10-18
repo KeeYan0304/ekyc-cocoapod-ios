@@ -14,13 +14,13 @@ public class VeryfyKit {
     
     private init() {}
     
-//    public static func loadEKYCViewController(delegate: EKYCViewControllerDelegate? = nil) -> UIViewController? {
-//        let frameworkBundle = Bundle(for: VeryfyKit.self)
-//        let storyboard = UIStoryboard(name: "VeryfyFramework", bundle: frameworkBundle)
-//        let viewController = storyboard.instantiateViewController(withIdentifier: "EKYCViewController") as! EKYCViewController
-//        viewController.delegate = delegate
-//        return viewController
-//    }
+    public static func loadEKYCViewController(delegate: EKYCViewControllerDelegate? = nil) -> UIViewController? {
+        let frameworkBundle = Bundle(for: VeryfyKit.self)
+        let storyboard = UIStoryboard(name: "VeryfyFramework", bundle: frameworkBundle)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "EKYCViewController") as! EKYCViewController
+        viewController.delegate = delegate
+        return viewController
+    }
     
     public func startJourney() {
         if let url = URL(string: "\(AppURL.Step.Start)") {
