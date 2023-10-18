@@ -1,33 +1,27 @@
-<<<<<<< HEAD
-# ekyc-cocoapod-ios
-=======
-# VeryfyiOSSDK
+# VeryfyIOSSDK
 
-[![CI Status](https://img.shields.io/travis/Kee Chun Yan/VeryfyiOSSDK.svg?style=flat)](https://travis-ci.org/Kee Chun Yan/VeryfyiOSSDK)
-[![Version](https://img.shields.io/cocoapods/v/VeryfyiOSSDK.svg?style=flat)](https://cocoapods.org/pods/VeryfyiOSSDK)
-[![License](https://img.shields.io/cocoapods/l/VeryfyiOSSDK.svg?style=flat)](https://cocoapods.org/pods/VeryfyiOSSDK)
-[![Platform](https://img.shields.io/cocoapods/p/VeryfyiOSSDK.svg?style=flat)](https://cocoapods.org/pods/VeryfyiOSSDK)
+The VeryfyIOSSDK is a powerful and flexible SDK that allows you to easily integrate Veryfy's services into your iOS applications. It provides seamless access to identity verification and other useful features.
 
-## Example
+## Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Configuration](#configuration)
+- [Documentation](#documentation)
+- [Examples](#examples)
+- [Contributing](#contributing)
+- [License](#license)
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+## Features
 
-## Requirements
+- Identity verification
+- Secure document handling
+- Customizable UI elements
+- and more...
 
 ## Installation
 
-VeryfyiOSSDK is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+The VeryfyIOSSDK can be installed using CocoaPods, a popular dependency manager for iOS projects. To install the SDK, add the following line to your project's `Podfile`:
 
 ```ruby
-pod 'VeryfyiOSSDK'
-```
-
-## Author
-
-Kee Chun Yan, chunyan.kee@veryfyglobal.tech
-
-## License
-
-VeryfyiOSSDK is available under the MIT license. See the LICENSE file for more info.
->>>>>>> main
+pod 'VeryfyIOSSDK'
