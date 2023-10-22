@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.author           = { 'Kee Chun Yan' => 'chunyan.kee@veryfyglobal.tech' }
   s.source           = { :git => 'https://github.com/KeeYan0304/ekyc-cocoapod-ios.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '13.0'
+  s.ios.deployment_target = '12.0'
 
   s.source_files = 'Classes/**/*'
 #  s.vendored_frameworks =
