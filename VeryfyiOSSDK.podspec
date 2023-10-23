@@ -14,6 +14,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '13.0'
 
 #  s.source_files = 'Classes/**/*'
-  s.vendored_frameworks = 'Classes/'
+  s.vendored_frameworks = 'Classes/VeryfyClientSDK.xcframework'
   s.swift_version = '5.0'
 end
