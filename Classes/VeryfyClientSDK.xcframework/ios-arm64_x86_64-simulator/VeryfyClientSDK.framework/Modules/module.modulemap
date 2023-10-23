@@ -1,0 +1,11 @@
+framework module VeryfyClientSDK {
+  umbrella header "VeryfyClientSDK.h"
+  export *
+
+  module * { export * }
+}
+
+module VeryfyClientSDK.Swift {
+  header "VeryfyClientSDK-Swift.h"
+  requires objc
+}

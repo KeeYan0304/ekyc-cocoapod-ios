@@ -1,0 +1,109 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name VeryfyClientSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import DeveloperToolsSupport
+import Foundation
+import Swift
+import SwiftUI
+import UIKit
+@_exported import VeryfyClientSDK
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class OCRModel : ObjectiveC.NSObject, Swift.Codable {
+  public var documentType: Swift.String?
+  public var ocrKeyValue: [Swift.String : Swift.String]?
+  @objc override dynamic public init()
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@objc public class JourneyModel : ObjectiveC.NSObject {
+  public var sessionId: Swift.String?
+  public var referenceId: Swift.String?
+  public var maxRetry: Swift.Int?
+  public init(sessionId: Swift.String, referenceId: Swift.String, maxRetry: Swift.Int)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class FRModel : ObjectiveC.NSObject {
+  public var probability: Swift.Float?
+  public var score: Swift.Float?
+  public var quality: Swift.Float?
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class OCRParams : Swift.Encodable {
+  final public var referenceId: Swift.String
+  final public var imageType: Swift.Int
+  final public var frontImage: Foundation.Data
+  final public var frontImageFlash: Foundation.Data?
+  final public var backImage: Foundation.Data?
+  public init()
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+}
+@_hasMissingDesignatedInitializers final public class FRParams : Swift.Encodable {
+  final public var referenceId: Swift.String
+  final public var selfieImage: Foundation.Data
+  public init()
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+}
+@_hasMissingDesignatedInitializers final public class OCRFRParams : Swift.Encodable {
+  final public var referenceId: Swift.String
+  final public var imageType: Swift.Int
+  final public var frontImage: Foundation.Data
+  final public var frontImageFlash: Foundation.Data?
+  final public var backImage: Foundation.Data?
+  final public var selfieImage: Foundation.Data
+  public init()
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+}
+@_hasMissingDesignatedInitializers public class OCRFRModel : Swift.Codable {
+  public var documentType: Swift.String?
+  public var descriptionValuePairs: [Swift.String : Swift.String]?
+  public var probability: Swift.Int?
+  public var score: Swift.Float?
+  public var quality: Swift.Float?
+  public init()
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class ApiSDKConfiguration {
+  public static let shared: VeryfyClientSDK.ApiSDKConfiguration
+  public var licenseKey: Swift.String?
+  public func setLicenseKey(_ key: Swift.String)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class VeryfyKit {
+  weak public var delegate: (any VeryfyClientSDK.VeryfyDelegate)?
+  public static let shared: VeryfyClientSDK.VeryfyKit
+  public static func loadEKYCViewController(delegate: (any VeryfyClientSDK.EKYCViewControllerDelegate)? = nil) -> UIKit.UIViewController?
+  public func startJourney()
+  public func performOCR(ocrInput: VeryfyClientSDK.OCRParams)
+  public func performFR(frInput: VeryfyClientSDK.FRParams)
+  public func performOCRFR(ocrFrInput: VeryfyClientSDK.OCRFRParams)
+  @objc deinit
+}
+@objc public protocol VeryfyDelegate {
+  @objc func journeyCompleted(withResult result: VeryfyClientSDK.JourneyModel?, errCode: Swift.String, errMsg: Swift.String)
+  @objc optional func ocrCompleted(withResult result: VeryfyClientSDK.OCRModel?, errCode: Swift.String?, errMsg: Swift.String?)
+  @objc optional func frCompleted(withResult result: VeryfyClientSDK.FRModel?, errCode: Swift.String, errMsg: Swift.String)
+  @objc optional func ocrFRCompleted(withOCRResult result: VeryfyClientSDK.OCRModel?, frResult: VeryfyClientSDK.FRModel?, errCode: Swift.String, errMsg: Swift.String)
+}
+public protocol EKYCViewControllerDelegate : AnyObject {
+  func eKYCViewControllerDidSessionEnded(_ viewController: VeryfyClientSDK.EKYCViewController)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class EKYCViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension VeryfyClientSDK.EKYCViewController : VeryfyClientSDK.VeryfyDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func journeyCompleted(withResult result: VeryfyClientSDK.JourneyModel?, errCode: Swift.String, errMsg: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func ocrFRCompleted(withOCRResult result: VeryfyClientSDK.OCRModel?, frResult: VeryfyClientSDK.FRModel?, errCode: Swift.String, errMsg: Swift.String)
+}
