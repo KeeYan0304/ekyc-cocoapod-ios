@@ -24,4 +24,4 @@ The VeryfyIOSSDK is a powerful and flexible SDK that allows you to easily integr
 The VeryfyIOSSDK can be installed using CocoaPods, a popular dependency manager for iOS projects. To install the SDK, add the following line to your project's `Podfile`:
 
 ```ruby
-pod 'VeryfyIOSSDK'
+pod 'VeryfyiOSSDK'
